@@ -2,11 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-/**
- * * main - get and print a random num if it is positive, negative or zero
- *
- * Return: 0
- */
+/** main - to assign and print a random number to the variable n each time it is executed, either positive, negative or zero.
+*
+* Return: 0
+*/
 int main(void)
 {
 	int n;
@@ -15,7 +14,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 		printf("%d is positive\n", n);
-	else if (n < 0)
+	if else
 		printf("%d is negative\n", n);
 	else
 		printf("%d is zero\n", n);
