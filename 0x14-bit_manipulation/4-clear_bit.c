@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * set_bit - the value of a bit to 1 at a given index.
  * @index: starting from 0 of the bit you want to set
@@ -12,11 +13,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	{
 		return (-1);
 	}
-
-	unsigned long int mask = ~(1UL << index);
-
-	*n &= mask;
-
+	*n = *n & ~(1UL << index);
 	return (1);
 }
 
